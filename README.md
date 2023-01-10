@@ -2,7 +2,7 @@
 # It's a circus
 
 Project Description: 
-- While spending a day at the circus your age is guessed, you're given a factiod about your age/birthday and then your fortune is told.
+- While spending a day at the circus your age is guessed and then your fortune is told.
 
 Project Expectations:
 - HTML/CSS
@@ -10,7 +10,7 @@ Project Expectations:
 - Javascript
 - Dom manipulation
 - API's (must fetch from at least one api)
-- 4+ HTML pages
+- 4 HTML pages
 - Mobile responsive
 - A design theme of some sort
 - Must receive user input of some sort (input button, click, etc)
@@ -22,7 +22,6 @@ Project Language:
 
 Project APIs: 
 - https://www.boredapi.com
-- http://numbersapi.com
 - https://api.agify.io
 
 Links:

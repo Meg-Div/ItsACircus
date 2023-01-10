@@ -8,15 +8,12 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body id="body">
-    <!-- hero section -->
-    <section id="hero">
+    <section id="project">
       <!-- flex container -->
       <div id="box" class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
         <div class="md:w-1/2">
           <img id="magic" src="magician.png" alt="">
         </div>
-        <!-- features -->
-        <section id="features">
           <!-- facts about age -->
           <div id="first" class="flex flex-col space-y-12 md:w1-/2">
             <h2 id="headOne" href="age.html" class="max-w-md text-4xl font-bold text-center md:text-left text-yellow-400 font-mono"> What is your name? </h2>
@@ -24,28 +21,26 @@
             <form id="form" class="w-full max-w-sm">
               <div id="form2" class="flex items-center border-b border-purple-500 py-2">
                 <input id="inputOne" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Name" aria-label="Full name">
-                <button id="buttonOne" class="flex-shrink-0 bg-purple-400 hover:bg-purple-500 border-purple-400 hover:border-purple-500 text-sm border-2 text-white py-1 px-2 rounded" onclick="getAge()" type="button"> Submit Name </button>
+                <button class="flex-shrink-0 bg-purple-400 hover:bg-purple-500 border-purple-400 hover:border-purple-500 text-sm border-2 text-white py-1 px-2 rounded" onclick="getAge()" type="button"> Submit Name </button>
               </div>
             </form>
           </div>
           <!--Answer -->
           <div id="container" class="flex flex-col space-y-8 x-8 md:w-1/2 font-mono">
-            <!-- List Item 1 -->
             <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row bg-cover">
               <!-- heading -->
               <div class="flex items-center space-x-2">
-                <div id="buttonOne" class=""></div>
+                <div></div>
                 <!-- linked to below (large screens) -->
-                <h3 id="ageFactOne" class="text base font-bold md:mb-4 md:hidden"></h3>
+                <h3 class="text base font-bold md:mb-4 md:hidden"></h3>
               </div>
               <div>
                 <!-- linked to above (small screens) -->
-                <h3 id="ageFactOne" class="hidden mb-4-text-lg font-bold md:block"></h3>
+                <h3 class="hidden mb-4-text-lg font-bold md:block"></h3>
                 <p id="one" class="text-purple-700 font-mono"></p>
               </div>
             </div>
           </div>
-        </section>
   </body>
   <script src="app.js"></script>
 </html>

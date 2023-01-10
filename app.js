@@ -1,48 +1,3 @@
-const getFacts = async () => {
-  //grab form value
-  let ageValue = document.querySelector("#inputOne");
-  ageValue = ageValue.value;
-
-  //clear out form and header
-  const header = document.querySelector("#headOne");
-  header.innerText = "";
-
-  const form = document.querySelector("#form");
-  form.innerHTML = "";
-  form.classList = "hidden";
-
-  //grabs data from API
-  const one = document.querySelector("#one");
-  const oneData = await fetch(`http://numbersapi.com/${ageValue}/date`);
-
-  //updates string data for a sentence
-  const fact = await twoData.text();
-  console.log(fact);
-  newFact = fact.substring(0, fact.length - 1);
-  one.innerHTML = `Did you know ${newFact}?\n\n`;
-
-  //pauses before asking to move to next page
-  setTimeout(() => {
-    one.innerHTML = `Would you like your fortune told?  `;
-
-    //creates links for next page - yes
-    const yesLink = document.createElement("a");
-    yesLink.classList =
-      "flex-shrink-0 bg-green-400 text-center text-sm space-y-1 border-2 text-white py-1 px-2 sm:w-1/2 rounded";
-    yesLink.innerHTML = "Yes";
-    yesLink.href = "crystalBall.html";
-    one.append(yesLink);
-
-    //creates links for next page - no
-    const noLink = document.createElement("a");
-    noLink.classList =
-      "flex-shrink-0 bg-red-500 text-center text-sm border-2 text-white py-1 px-2 sm:w-1/2 rounded";
-    noLink.innerHTML = "No";
-    noLink.href = "leave.html";
-    one.append(noLink);
-  }, 5000);
-};
-
 const getAge = async () => {
   //grab form value
   let nameValue = document.querySelector("#inputOne");
@@ -80,26 +35,23 @@ const getAge = async () => {
   image.src = `magician.png`;
   contain.append(image);
 
-  //pauses and asks if the guess is your age
   setTimeout(() => {
-    one.innerText = `Is this your age?  `;
+    one.innerHTML = `Would you like your fortune told?  `;
 
-    //creates links for next page
-    let yes = document.querySelector("#yes");
+    //creates links for next page - yes
     const yesLink = document.createElement("a");
     yesLink.classList =
       "flex-shrink-0 bg-green-400 text-center text-sm space-y-1 border-2 text-white py-1 px-2 sm:w-1/2 rounded";
-    yesLink.innerText = "Yes";
-    yesLink.href = "facts.html";
+    yesLink.innerHTML = "Yes";
+    yesLink.href = "crystalBall.html";
     one.append(yesLink);
 
-    //if no age is given
-    let no = document.querySelector("#no");
+    //creates links for next page - no
     const noLink = document.createElement("a");
     noLink.classList =
       "flex-shrink-0 bg-red-500 text-center text-sm border-2 text-white py-1 px-2 sm:w-1/2 rounded";
-    noLink.innerText = "No";
-    noLink.href = "birthday.html";
+    noLink.innerHTML = "No";
+    noLink.href = "leave.html";
     one.append(noLink);
-  }, 3000);
+  }, 5000);
 };
