@@ -12,17 +12,18 @@ const getFacts = async () => {
   form.classList = "hidden";
 
   //grabs data from API
-  const two = document.querySelector("#one");
-  const twoData = await fetch(`http://numbersapi.com/${ageValue}/date`);
+  const one = document.querySelector("#one");
+  const oneData = await fetch(`http://numbersapi.com/${ageValue}/date`);
 
   //updates string data for a sentence
   const fact = await twoData.text();
+  console.log(fact);
   newFact = fact.substring(0, fact.length - 1);
-  two.innerHTML = `Did you know ${newFact}?\n\n`;
+  one.innerHTML = `Did you know ${newFact}?\n\n`;
 
   //pauses before asking to move to next page
   setTimeout(() => {
-    two.innerHTML = `Would you like your fortune told?  `;
+    one.innerHTML = `Would you like your fortune told?  `;
 
     //creates links for next page - yes
     const yesLink = document.createElement("a");
