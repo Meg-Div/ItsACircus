@@ -1,5 +1,5 @@
 
-# It's a circus
+# It's A Circus
 
 Project Description: 
 - While spending a day at the circus your age is guessed and then your fortune is told.
@@ -10,7 +10,7 @@ Project Expectations:
 - Javascript
 - Dom manipulation
 - API's (must fetch from at least one api)
-- 4 HTML pages
+- 4+ HTML pages
 - Mobile responsive
 - A design theme of some sort
 - Must receive user input of some sort (input button, click, etc)
@@ -25,5 +25,5 @@ Project APIs:
 - https://api.agify.io
 
 Links:
-- [GitHub](https://github.com/Meg-Div/ClassWork/tree/main/FrontEndProject)
+- [GitHub](https://github.com/Meg-Div/ItsACircus)
 - [Dev.to blog](https://dev.to/megdiv/its-a-circus-3jm8)
