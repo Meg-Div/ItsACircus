@@ -18,27 +18,25 @@ const getFacts = async () => {
   //updates string data for a sentence
   const fact = await twoData.text();
   newFact = fact.substring(0, fact.length - 1);
-  two.innerText = `Did you know ${newFact}?\n\n`;
+  two.innerHTML = `Did you know ${newFact}?\n\n`;
 
   //pauses before asking to move to next page
   setTimeout(() => {
-    two.innerText = `Would you like your fortune told?  `;
+    two.innerHTML = `Would you like your fortune told?  `;
 
     //creates links for next page - yes
-    let yes = document.querySelector("#yes");
     const yesLink = document.createElement("a");
     yesLink.classList =
       "flex-shrink-0 bg-green-400 text-center text-sm space-y-1 border-2 text-white py-1 px-2 sm:w-1/2 rounded";
-    yesLink.innerText = "Yes";
+    yesLink.innerHTML = "Yes";
     yesLink.href = "crystalBall.html";
     one.append(yesLink);
 
     //creates links for next page - no
-    let no = document.querySelector("#no");
     const noLink = document.createElement("a");
     noLink.classList =
       "flex-shrink-0 bg-red-500 text-center text-sm border-2 text-white py-1 px-2 sm:w-1/2 rounded";
-    noLink.innerText = "No";
+    noLink.innerHTML = "No";
     noLink.href = "leave.html";
     one.append(noLink);
   }, 5000);
