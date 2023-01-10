@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <nav class="relative container mx-auto p-6">
+      <!-- Flex Container  -->
+    </nav>
+    <!-- hero section -->
+    <section id="hero">
+      <!-- flex container -->
+      <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+        <div class="w-1/4 h-auto">
+          <img id="magic" src="clown.png" alt="">
+        </div>
+        <!-- features -->
+        <section id="features">
+          <!-- facts about age -->
+          <div class="flex flex-col space-y-12 md:w1-/2">
+            <h2 id="headOne" class="max-w-md text-4xl font-bold text-center font-mono text-red-500 md:text-left"> What is your age? </h2>
+            <!-- form -->
+            <form id="form" class="w-full max-w-sm">
+              <div class="flex items-center border-b border-red-500 py-2">
+                <input id="inputOne" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Your Age" aria-label="Full name" value=>
+                <button class="flex-shrink-0 bg-red-500  text-sm text-white py-1 px-2 rounded" onclick="getFacts()" type="button"> Submit Age </button>
+              </div>
+            </form>
+          </div>
+          <!-- Numbered list -->
+          <div class="flex flex-col space-y-8 x-8 md:w-1/2 font-mono
+">
+            <!-- List Item 1 -->
+            <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+              <!-- heading -->
+              <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent ">
+                <div class="flex items-center space-x-2">
+                  <div id="buttonOne" class=""></div>
+                  <!-- linked to below (large screens) -->
+                  <h3 id="ageFactOne" class="text base font-bold md:mb-4 md:hidden"></h3>
+                </div>
+              </div>
+              <div>
+                <!-- linked to above (small screens) -->
+                <h3 id="ageFactOne" class="hidden mb-4-text-lg font-bold md:block"></h3>
+                <p id="one" class="font-mono text-red-500"></p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+  </body>
+  <script src="app.js"></script>
+</html>
