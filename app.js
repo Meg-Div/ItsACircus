@@ -13,7 +13,7 @@ const getFacts = async () => {
 
   //grabs data from API
   const two = document.querySelector("#one");
-  const twoData = await fetch(`http://numbersapi.com/${ageValue}/trivia`);
+  const twoData = await fetch(`http://numbersapi.com/${ageValue}/date`);
 
   //updates string data for a sentence
   const fact = await twoData.text();
