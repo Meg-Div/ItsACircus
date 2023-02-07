@@ -4,14 +4,11 @@ const getAge = async () => {
   nameValue = nameValue.value;
 
   //clear out form and header
-  const header = document.querySelector("#headOne");
-  header.innerText = "";
-
   const form = document.querySelector("#form");
   form.classList = "hidden";
 
   //grabs data from API
-  let one = document.querySelector("#one");
+  let one = document.querySelector("#headOne");
   let oneData = await fetch(`https://api.agify.io?name=${nameValue}`);
   const json = await oneData.json();
 
