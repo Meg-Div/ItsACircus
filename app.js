@@ -16,8 +16,10 @@ const getAge = async () => {
   const json = await oneData.json();
 
   //clears out picture
+  /*
   const magic = document.querySelector("#magic");
   magic.src = "";
+  */
 
   //logic for if a name is not entered
   if (json.age === null) {
@@ -28,12 +30,14 @@ const getAge = async () => {
   }
 
   //updates image
+  /*
   let contain = document.querySelector("#container");
   const d = document.createElement("div");
   const image = document.createElement("img");
   image.classList = "max-w-full h-auto";
   image.src = `magician.png`;
   contain.append(image);
+  */
 
   setTimeout(() => {
     one.innerHTML = `Would you like your fortune told?  `;
