@@ -1,52 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body id="body">
-    <section id="project">
-      <!-- flex container -->
-      <div class="container flex flex-col-reverse items-center justify-center px-6 mt-10 space-y-0 ">
-        <div class="justify-center">
-          <img class="" src="magician.png" alt="">
-        </div>
-        <section id="">
-          <!-- facts about age -->
-          <div class="flex flex-col space-y-12 justify-center">
-            <h2 id="headOne" href="age.html" class="max-w-md text-3xl font-bold text-center md:text-left text-yellow-400 font-mono"> What is your name? </h2>
-            <!-- form -->
-            <form id="form" class="w-full max-w-sm">
-              <div class="flex items-center justify-center border-b border-purple-500 py-2">
-                <input id="inputOne" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Name" aria-label="Full name">
-                <button id="buttonOne" class="flex-shrink-0 bg-purple-400 hover:bg-purple-500 border-purple-400 hover:border-purple-500 text-sm border-2 text-white py-1 px-2 rounded" onclick="getAge()" type="button"> Submit Name</button>
-              </div>
-            </form>
-          </div>
-          <br>
-          <!--Answer -->
-          <div id="container" class="flex flex-col space-y-8 x-8 md:w-1/2 font-mono">
-            <!-- List Item 1 -->
-            <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row bg-cover">
-              <!-- heading -->
-              <div class="flex items-center space-x-2">
-                <div class=""></div>
-                <!-- linked to below (large screens) -->
-                <h3 class="text base font-bold md:mb-4 md:hidden"></h3>
-              </div>
-              <div>
-                <!-- linked to above (small screens) -->
-                <h3 class="hidden mb-4-text-lg font-bold md:block"></h3>
-                <p id="one" class="text-purple-700 font-mono"></p>
-              </div>
-            </div>
 
-            
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body id="body">
+  <section id="project">
+    <!-- flex container -->
+    <div class="container flex flex-col-reverse items-center justify-center px-6 mt-10 space-y-0 ">
+      <div class="justify-center, md:w-1/2">
+        <img src="magician.png" alt="">
+      </div>
+      <section id="">
+        <!-- facts about age -->
+        <div class="flex flex-col space-y-12 justify-center">
+          <h2 id="headOne" href="age.html"
+            class="max-w-md text-3xl font-bold text-center md:text-left text-yellow-400 font-mono"> What is your name?
+          </h2>
+          <!-- form -->
+          <form id="form" class="w-full max-w-sm" autocomplete="off">
+            <div class="flex items-center justify-center border-b border-purple-500 py-2">
+              <input id="inputOne"
+                class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                type="text" placeholder="Name" aria-label="Full name">
+              <button id="buttonOne"
+                class="flex-shrink-0 bg-purple-400 hover:bg-purple-500 border-purple-400 hover:border-purple-500 text-sm border-2 text-white py-1 px-2 rounded"
+                onclick="getAge()" type="button"> Submit Name</button>
+            </div>
+          </form>
+        </div>
+        <br>
+        <!--Answer -->
+        <div id="container" class="flex flex-col space-y-8 x-8 md:w-1/2 font-mono">
+          <!-- List Item 1 -->
+          <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row bg-cover">
+            <!-- heading -->
+            <div class="flex items-center space-x-2">
+              <div class=""></div>
+              <!-- linked to below (large screens) -->
+              <h3 class="text base font-bold md:mb-4 md:hidden"></h3>
+            </div>
+            <div>
+              <!-- linked to above (small screens) -->
+              <h3 class="hidden mb-4-text-lg font-bold md:block"></h3>
+              <p id="one" class="text-purple-700 font-mono"></p>
+            </div>
           </div>
-        </section>
-  </body>
-  <script src="app.js"></script>
+
+
+        </div>
+      </section>
+</body>
+<script src="app.js"></script>
+
 </html>

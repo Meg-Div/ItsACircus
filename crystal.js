@@ -1,4 +1,6 @@
 /*
+Previous API:
+
 const getAdvice = async () => {
   //updates inner text with data from api
   const words = document.querySelector("#words");
@@ -17,6 +19,7 @@ const getAdvice = async () => {
     window.location = "leave.html";
   }, 17000);
 };
+
 */
 
 const getJoke = async () => {
@@ -36,10 +39,10 @@ const getJoke = async () => {
       });
       setTimeout(() => {
         words.innerText = `\n${punchline}!`;
-      }, 9000);
+      }, 7000);
       setTimeout(() => {
-        words.innerText = `\nHave a great night folks!`;
-      }, 17000);
+        words.innerText = `\nHave a great night folks!\n\n I'll be here all week!`;
+      }, 15000);
 
       setTimeout(() => {
         window.location = "leave.html";

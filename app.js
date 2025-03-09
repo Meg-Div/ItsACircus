@@ -22,8 +22,10 @@ const getAge = async () => {
   if (json.age === null) {
     json.age = 0;
     one.innerText = `I'll guess you are ageless!`;
+    one.style.textAlign = "center";
   } else {
-    one.innerText = `I'll guess you are:\n\n ${json.age} years old!`;
+    one.innerText = `I'll guess you are... \n\n ${json.age} years old!`;
+    one.style.textAlign = "center";
   }
 
   //updates image
@@ -37,15 +39,16 @@ const getAge = async () => {
   */
 
   setTimeout(() => {
-    one.innerHTML = `Would you like to hear a joke?`;
+    one.innerHTML = `<p>Would you like to hear a joke?</p>`;
 
-    //creates links for next page - yes
     const yesLink = document.createElement("a");
     yesLink.classList =
       "flex-shrink-0 bg-green-400 text-center text-sm space-y-1 border-2 text-white py-1 px-2 sm:w-1/2 rounded";
     yesLink.innerHTML = "Yes";
     yesLink.href = "crystalBall.html";
-    one.append(yesLink);
+
+    // Add a line break before appending the button
+    one.append(document.createElement("br"), yesLink);
 
     //creates links for next page - no
     const noLink = document.createElement("a");
