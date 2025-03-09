@@ -1,4 +1,4 @@
-//gets age from name
+/*
 const getAdvice = async () => {
   //updates inner text with data from api
   const words = document.querySelector("#words");
@@ -17,5 +17,36 @@ const getAdvice = async () => {
     window.location = "leave.html";
   }, 17000);
 };
+*/
 
-getAdvice();
+const getJoke = async () => {
+  const words = document.querySelector("#words");
+
+  try {
+    let oneData = await fetch(
+      "https://official-joke-api.appspot.com/random_joke"
+    );
+    const joke = await oneData.json();
+    const setup = joke.setup;
+    const punchline = joke.punchline;
+
+    if (words) {
+      setTimeout(() => {
+        words.innerText = `\n${setup}!`;
+      });
+      setTimeout(() => {
+        words.innerText = `\n${punchline}!`;
+      }, 9000);
+      setTimeout(() => {
+        words.innerText = `\nHave a great night folks!`;
+      }, 17000);
+
+      setTimeout(() => {
+        window.location = "leave.html";
+      }, 20000);
+    }
+  } catch (error) {
+    console.error("Error fetching joke:", error);
+  }
+};
+getJoke();

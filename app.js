@@ -37,7 +37,7 @@ const getAge = async () => {
   */
 
   setTimeout(() => {
-    one.innerHTML = `Would you like your fortune told?  `;
+    one.innerHTML = `Would you like to hear a joke?`;
 
     //creates links for next page - yes
     const yesLink = document.createElement("a");
